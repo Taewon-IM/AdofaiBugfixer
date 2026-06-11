@@ -5,5 +5,6 @@
   "Version": "1.0.0",
   "Requirements": [],
   "AssemblyName": "AdofaiBugfixer.dll",
-  "EntryMethod": "AdofaiBugfixer.Main.Load"
+  "EntryMethod": "AdofaiBugfixer.Main.Load",
+  "Repository": "https://raw.githubusercontent.com/Taewon-IM/AdofaiBugfixer/refs/heads/master/Repository.json"
 }
