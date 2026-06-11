@@ -1,0 +1,9 @@
+{
+  "Id": "AdofaiBugfixer",
+  "DisplayName": "AdofaiBugfixer",
+  "Author": "Taewon-IM",
+  "Version": "1.0.0",
+  "Requirements": [],
+  "AssemblyName": "AdofaiBugfixer.dll",
+  "EntryMethod": "AdofaiBugfixer.Main.Load"
+}
