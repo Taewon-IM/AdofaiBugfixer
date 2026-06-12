@@ -14,6 +14,11 @@ Fixed an issue where the game's default fullscreen toggle behaves inconsistently
 
 * **How It Works:** Overrides the default "fullscreen" behavior by implementing a custom state tracker and reliably saving the user's preference. Upon activation, it explicitly enforces the correct mode. Additionally, it forces to update to the current frame at the exact moment of confirmation, safely locking out any lingering arrow key inputs to prevent unintended tab switching.
 
+### 3. Video Background Editor Persistence Fix
+Fixed an issue in the level editor where video backgrounds would remain visible and "stuck" in the background even after exiting the playtest and returning to the editor after a checkpoint respawn.
+
+* **How It Works:** When switching back to Editing Mode, the mod forcefully pauses the VideoPlayer and resets its rendering state. By toggling the VideoPlayer object's active state, it clears the GPU's lingering texture buffer (the "ghost" frame) ensuring a clean editor workspace.
+
 ## Installation
 
 1. Download the latest `AdofaiBugfixer_vX.X.X.zip` from the [Releases](../../releases) page.
